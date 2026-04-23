@@ -1,0 +1,148 @@
+0.Ejercicio arrays
+
+1: 
+namespace ArraysPractica
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            int temp;
+            int[] array = new int[10];
+
+
+            for (int i = 0; i < 10; i++)
+            {
+                Console.WriteLine($"Ingrese el numero {i + 1}");
+                array[i] = Convert.ToInt16(Console.ReadLine());
+            }
+            Console.WriteLine("===============================================================");
+
+
+             Console.WriteLine("Este es TU array");
+               for (int i = 0; i < array.Length; i++)
+                {
+                    Console.WriteLine(array[i]);
+                }
+           
+
+
+            Console.WriteLine("===============================================================");
+
+
+            Console.WriteLine("AHORA MOSTRARE EL ARRAY INVERTIDO");
+            for (int i = 0; i < array.Length /2; i++)
+            {
+                temp = array[i];
+                array[i] = array[array.Length - 1 - i];
+                array[array.Length - 1 - i] = temp;
+
+
+            }
+              for (int i = 0; i < array.Length; i++)
+                {
+                    Console.WriteLine(array[i]);
+                }
+           
+        }
+    }
+}
+
+
+
+
+
+2:
+namespace ArraysPractica
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+           
+            int[] array = new int[10];
+            int may = int.MinValue;
+            int men = int.MaxValue;
+
+
+            for (int i = 0; i < 10; i++)
+            {
+                Console.WriteLine($"Ingrese el numero {i + 1}");
+                array[i] = Convert.ToInt16(Console.ReadLine());
+                if (array[i] > may)
+                {
+                    may = array[i];
+                }
+               
+               
+                if (array[i] < men)
+                 {
+                     men = array[i];
+                 }
+               
+            }
+
+
+            Console.WriteLine($"El numero mas grande encontrado dentro del array es {may}");
+            Console.WriteLine($"Y el numero mas pequeno encontrado dentro del array es {men}");
+
+
+           
+        }
+    }
+}
+
+
+
+
+
+
+3:
+namespace ArraysPractica
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+           
+            int[] array = new int[10];
+            int diff = 0;
+            int total = 0;
+            int promedio = 0;
+
+
+            for (int i = 0; i < 10; i++)
+            {
+                Console.WriteLine($"Ingrese el numero {i + 1}");
+                array[i] = Convert.ToInt16(Console.ReadLine());
+                total = array[i] + total;
+               
+               
+            }
+
+
+            promedio = total / 10;
+
+
+            Console.WriteLine($"El promedio de todos los numero es de {promedio}");
+            Console.WriteLine($"============================================");
+
+
+            for (int i = 0; i < 10; i++)
+            {
+                diff = promedio - array[i];
+                Console.WriteLine($"La diferencia entre {i} y {promedio} es de {diff}");
+               
+            }            
+           
+
+
+           
+        }
+    }
+}
+
+
+
+
+
