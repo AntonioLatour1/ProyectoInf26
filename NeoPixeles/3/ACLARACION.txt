@@ -1,0 +1,2 @@
+Hola profe, al completar la tarea de di cuenta que al usar delays el Arduino aveces no detectaba cuando apretaba el boton asi que le pedi ayuda a la IA con ese tema.
+Me parecia pertinente aclararlo. Por eso agregue el primer trabajo que es el cual presentaba ese error y luego el otro modificado con la IA para resolver el tema de los delays.
